@@ -37,7 +37,6 @@ function isEmptyInput(){
     qrText.value.length > 0 ? generateQRCode() : alert("Enter the text or URL to generate your QR code");;
 }
 function generateQRCode(){
-    qrContainer.innerHTML = "";
     new QRCode(qrContainer, {
         text:qrText.value,
         height:size,
